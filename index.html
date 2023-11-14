@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <!-- jQuery script tag -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <div class="card">
+    <!-- Search Bar -->
+    <div class="search">
+      <input type="text" class="search-bar" placeholder="Search">
+      <button aria-label="Search">
+        <!-- SVG icon for search -->
+        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="1.5em" width="1.5em"
+          xmlns="http://www.w3.org/2000/svg">
+          <!-- SVG path here -->
+        </svg>
+      </button>
+    </div>
+
+    <!-- Weather Information -->
+    <div class="weather loading">
+      <h2 class="city">Weather in Philadelphia, PA</h2>
+      <div class="time"></div>
+      <h1 class="temp">Loading...</h1>
+      <label class="feels_like"></label><br>
+      <label class="temp_max"></label><span class="temp_min"></span>
+
+      <!-- Weather Details -->
+      <div class="flex">
+        <img src="https://via.placeholder.com/1x1" alt="Search Icon" class="icon" >
+        <div class="description"></div>
+      </div>
+
+      <div class="humidity"></div>
+      <span class="wind"></span> <span class="deg"></span>
+      <footer class="footnote"></footer>
+
+      <!-- Hourly Forecast Container -->
+      <div class="hourly-forecast-container">
+        <h3>Hourly Forecast</h3>
+        <div class="hourly-forecast">
+          <!-- Hourly forecast items will be appended here -->
+        </div>
+      </div>
+
+      <!-- Daily Forecast Container -->
+      <div class="daily-forecast-container">
+        <h3>5 Day Forecast</h3>
+        <div class="daily-forecast">
+          <!-- Daily forecast items will be appended here -->
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
